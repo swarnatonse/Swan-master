@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fatemeh.newtest.ReflectiveThreeActivity"
+    tools:showIn="@layout/activity_reflective_three"
+    android:background="@drawable/reflective3">
+
+    <ImageButton
+        android:id="@+id/button_done"
+        android:layout_width="wrap_content"
+        app:layout_widthPercent ="20%"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent ="12%"
+        app:layout_marginTopPercent="70%"
+        app:layout_marginLeftPercent="42%"
+        android:onClick="stopRecording"
+        android:background="@android:color/transparent"
+        android:foreground="@android:color/transparent"
+        />
+    <ImageButton
+        android:id="@+id/button_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="1%"
+        app:layout_marginLeftPercent="88%"
+        android:onClick="closeApp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/button_close" />
+
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="80%"
+        app:layout_marginLeftPercent="1%"
+        android:onClick="startReflectiveTwoActivity"
+        android:background="@android:color/transparent"
+        android:src="@drawable/button_back"/>
+
+    <ImageButton
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="80%"
+        app:layout_marginLeftPercent="88%"
+        android:onClick="startEndActivity"
+        android:background="@android:color/transparent"
+        android:src="@drawable/button_next"
+        />
+
+   <!-- <ImageView
+        android:id="@+id/see_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"/>-->
+
+    <com.example.fatemeh.newtest.DrawingView
+        android:id="@+id/see_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="26%"
+        app:layout_marginLeftPercent="32%"
+        app:layout_marginRightPercent="30%"
+        app:layout_marginBottomPercent="43%"
+        android:layout_marginTop="60dp"
+        android:background="#FFFFFFFF"
+        android:layout_weight="1.08" />
+
+</android.support.percent.PercentRelativeLayout>

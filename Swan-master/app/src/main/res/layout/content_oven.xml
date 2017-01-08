@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backmakingpie"
+    tools:context="com.example.fatemeh.newtest.OvenActivity"
+    tools:showIn="@layout/activity_oven">
+
+    <ImageView
+        android:id="@+id/egg"
+        android:layout_width="wrap_content"
+        app:layout_widthPercent="15%"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent = "25%"
+        app:layout_marginTopPercent="5%"
+        app:layout_marginLeftPercent="65%"
+        android:src="@drawable/object_egg"
+        />
+    <ImageView
+        android:id="@+id/flour"
+        android:layout_width="wrap_content"
+        app:layout_widthPercent="15%"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent = "25%"
+        app:layout_marginTopPercent="5%"
+        app:layout_marginLeftPercent="48%"
+        android:src="@drawable/object_flour"
+        />
+    <ImageView
+        android:id="@+id/milk"
+        android:layout_width="wrap_content"
+        app:layout_widthPercent="15%"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent = "25%"
+        app:layout_marginTopPercent="5%"
+        app:layout_marginLeftPercent="30%"
+        android:src="@drawable/object_milk"
+        />
+    <ImageView
+        android:id="@+id/plate"
+        android:layout_width="wrap_content"
+        app:layout_widthPercent = "30%"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent = "50%"
+        app:layout_marginTopPercent="40%"
+        app:layout_marginLeftPercent="40%"
+        android:src="@drawable/object_plate"
+        />
+
+    <ImageView
+        android:id="@+id/recipie1"
+        android:layout_width="wrap_content"
+        app:layout_heightPercent="80%"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="25%"
+        app:layout_marginTopPercent="1%"
+        app:layout_marginLeftPercent="1%"
+        android:src="@drawable/recipe1"
+        />
+
+    <ImageButton
+        android:id="@+id/button_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="1%"
+        app:layout_marginLeftPercent="88%"
+        android:onClick="closeApp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/button_close" />
+
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="80%"
+        app:layout_marginLeftPercent="1%"
+        android:onClick="startVidAppleOvenActivity"
+        android:background="@android:color/transparent"
+        android:src="@drawable/button_back"/>
+
+    <ImageButton
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="80%"
+        app:layout_marginLeftPercent="88%"
+        android:onClick="startOvenUhvatActivity"
+        android:background="@android:color/transparent"
+        android:src="@drawable/button_next"
+        />
+
+
+</android.support.percent.PercentRelativeLayout>

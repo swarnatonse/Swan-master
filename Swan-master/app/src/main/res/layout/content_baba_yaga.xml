@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.fatemeh.newtest.BabaYagaActivity"
+    android:background="@drawable/babayaga_backgr"
+    android:id = "@+id/paint_colors"
+    tools:showIn="@layout/activity_baba_yaga">
+
+
+    <ImageButton
+        android:id="@+id/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="0%"
+        app:layout_marginLeftPercent="0%"
+        android:contentDescription="@string/paint"
+        android:onClick="paintClicked"
+        android:src="@drawable/buttons_red_nactive"
+        android:background="@android:color/transparent"
+        android:tag="#FFFF1111" />
+
+    <ImageButton
+        android:id="@+id/yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="14%"
+        app:layout_marginLeftPercent="0%"
+        android:contentDescription="@string/paint"
+        android:onClick="paintClicked"
+        android:src="@drawable/buttons_yellow_nactive"
+        android:background="@android:color/transparent"
+        android:tag="#FFFFCC00" />
+
+    <ImageButton
+        android:id="@+id/green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="28%"
+        app:layout_marginLeftPercent="0%"
+        android:contentDescription="@string/paint"
+        android:onClick="paintClicked"
+        android:src="@drawable/buttons_green_nactive"
+        android:background="@android:color/transparent"
+        android:tag="#FF009900" />
+
+
+    <ImageButton
+        android:id="@+id/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="43%"
+        app:layout_marginLeftPercent="0%"
+        android:contentDescription="@string/paint"
+        android:onClick="paintClicked"
+        android:src="@drawable/buttons_blue_nactive"
+        android:background="@android:color/transparent"
+        android:tag="#FF0000FF" />
+
+    <ImageButton
+        android:id="@+id/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="55%"
+        app:layout_marginLeftPercent="0%"
+        android:contentDescription="@string/paint"
+        android:onClick="paintClicked"
+        android:src="@drawable/buttons_white_nactive"
+        android:background="@android:color/transparent"
+        android:tag="#FFFFFFFF" />
+
+    <ImageButton
+        android:id="@+id/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        app:layout_marginTopPercent="68%"
+        app:layout_marginLeftPercent="0%"
+        android:contentDescription="@string/paint"
+        android:onClick="paintClicked"
+        android:src="@drawable/buttons_black_nactive"
+        android:background="@android:color/transparent"
+        android:tag="#FF000000" />
+
+
+
+    <com.example.fatemeh.newtest.DrawingView
+        android:id="@+id/drawing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_marginTopPercent="17%"
+        app:layout_marginLeftPercent="9%"
+        app:layout_marginRightPercent="8%"
+        app:layout_marginBottomPercent="4%"
+        android:layout_marginTop="60dp"
+        android:background="#FFFFFFFF"
+        android:layout_weight="1.08" />
+
+
+
+    <ImageButton
+        android:id="@+id/opacity_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_marginTopPercent="45%"
+        app:layout_marginLeftPercent="92%"
+        android:contentDescription="@string/opacity"
+        android:src="@drawable/opacity" />
+
+    <ImageButton
+        android:id="@+id/new_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="56%"
+        app:layout_marginLeftPercent="92%"
+        android:contentDescription="@string/start_new"
+        android:src="@drawable/new_pic" />
+
+    <ImageButton
+        android:id="@+id/erase_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_marginTopPercent="32%"
+        app:layout_marginLeftPercent="92%"
+        android:contentDescription="@string/erase"
+        android:src="@drawable/eraser" />
+
+    <ImageButton
+        android:id="@+id/draw_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_marginTopPercent="19%"
+        app:layout_marginLeftPercent="92%"
+        android:contentDescription="@string/brush"
+        android:src="@drawable/brush" />
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/save_btn"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--app:layout_marginTopPercent="83%"-->
+        <!--app:layout_marginLeftPercent="42%"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:contentDescription="@string/save"-->
+        <!--android:src="@drawable/done" />-->
+
+
+    <ImageButton
+        android:id="@+id/button_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="1%"
+        app:layout_marginLeftPercent="88%"
+        android:onClick="closeApp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/button_close" />
+
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="80%"
+        app:layout_marginLeftPercent="1%"
+        android:onClick="startVidBabaYagaActivity"
+        android:background="@android:color/transparent"
+        android:src="@drawable/button_back"/>
+
+    <ImageButton
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="80%"
+        app:layout_marginLeftPercent="88%"
+        android:onClick="startVidEscapeActivity"
+        android:background="@android:color/transparent"
+        android:src="@drawable/button_next"
+        />
+</android.support.percent.PercentRelativeLayout>

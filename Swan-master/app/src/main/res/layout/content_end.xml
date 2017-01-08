@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.fatemeh.newtest.EndActivity"
+    tools:showIn="@layout/activity_end"
+    android:background="@drawable/end_game">
+
+    <ImageButton
+        android:id="@+id/Exit"
+        android:layout_width="wrap_content"
+        app:layout_widthPercent ="20%"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent ="13%"
+        app:layout_marginTopPercent="70%"
+        app:layout_marginLeftPercent="16%"
+        android:onClick="closeApp"
+        android:background="@android:color/transparent"
+        android:foreground="@android:color/transparent"
+        />
+    <ImageButton
+        android:id="@+id/Bonus"
+        android:layout_width="wrap_content"
+        app:layout_widthPercent ="20%"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent ="13%"
+        app:layout_marginTopPercent="70%"
+        app:layout_marginLeftPercent="41%"
+        android:onClick="startReflectiveOneActivity"
+        android:background="@android:color/transparent"
+        android:foreground="@android:color/transparent"
+        />
+    <ImageButton
+        android:id="@+id/PlayAgain"
+        android:layout_width="wrap_content"
+        app:layout_widthPercent ="20%"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent ="13%"
+        app:layout_marginTopPercent="70%"
+        app:layout_marginLeftPercent="66%"
+        android:onClick="startStartActivity"
+        android:background="@android:color/transparent"
+        android:foreground="@android:color/transparent"
+        />
+</android.support.percent.PercentRelativeLayout>
+
+
